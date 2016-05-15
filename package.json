@@ -1,0 +1,11 @@
+{
+  "name": "fullerhosting",
+  "version": "1.0.0",
+  "description": "Fuller Hosting",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install express --save"
+  },
+  "author": "Joey Fuller",
+  "license": "ISC"
+}

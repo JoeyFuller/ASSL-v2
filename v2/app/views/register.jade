@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  doctype html
+  html(lang='en')
+    head
+      title Fuller Hosting
+      link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    body
+      .logo-container
+        img#logo(src='/images/logo.png')
+      .nav
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/products') Products
+          li
+            a(href='/about') About Us
+          li
+            a(href='/contact') Contact Us
+          li
+            a(href='/control') Control Panel
+          li
+            a(href='/login') Login
+          br
+      .register-container
+        h2 Register 
+        form(action='/login', method='post')
+          div
+            lable Username:
+            input(type='text', name='username')
+          br
+          div
+            lable Password:
+            input(type='password', name='password')
+          br
+          div
+            input(type='submit', value='Submit')
+        a(href='/')
+          button.btn.btn-primary(type="button") Cancel

@@ -1,0 +1,76 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width:100%;
+  padding-top: 80px;
+  margin-left:0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#logo {
+	margin: 0px auto;
+}
+
+.logo-container {
+	width: 900px;
+	margin: auto;
+	padding-bottom: 10px;
+	padding-left: 60px;
+}
+
+.login-container {
+	width: 250px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 40px;
+	outline: 3px solid #000;
+
+}
+
+.nav {
+	margin: auto;
+
+}
+
+.register-container {
+	width: 250px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 40px;
+	outline: 3px solid #000;
+}
+.content-container {
+	width: 660px;
+	padding: 10px;
+	margin: auto;
+}
+ul {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
