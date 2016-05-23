@@ -1,0 +1,35 @@
+extends ../layouts/default
+
+block head
+  title Fuller Hosting
+
+block neck
+  link(rel='stylesheet', href='/views/index.min.css?#{cacheBreaker}')
+
+block body
+  div.jumbotron
+    img#logo(src='/images/logo.png')
+    p.lead
+      | Web, server, and e-mail hosting services.
+    div
+      a.btn.btn-primary.btn-lg(href='/signup/') Start Here!
+    div.clearfix
+  div.row
+    div.col-sm-4
+      div.panel.panel-default
+        div.panel-body
+          h3 Sign Up
+          p Want to give us a shot? We are waiting for new users like yourself to sign up and try out the vast services we have to offer you.
+          a.btn.btn-default.btn-block(href='/signup/') Sign Up
+    div.col-sm-4
+      div.panel.panel-default
+        div.panel-body
+          h3 About Us
+          p Fuller Hosting is your premium web and email hosting source. With the ability to expand and create custom plans for you or your business.
+          a.btn.btn-default.btn-block(href='/about/') Learn More
+    div.col-sm-4
+      div.panel.panel-default
+        div.panel-body
+          h3 Contact Us
+          p We pride ourselves on creating a user-friendly experiance, with that comes to ability to get ahold of us whenever and however you need.
+          a.btn.btn-default.btn-block(href='/contact/') Contact Us

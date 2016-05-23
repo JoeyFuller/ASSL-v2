@@ -1,0 +1,41 @@
+extends ../../layouts/account
+
+block head
+  title Account Area
+
+block neck
+  link(rel='stylesheet', href='/views/account/index.min.css?#{cacheBreaker}')
+
+block feet
+  script(src='/views/account/index.min.js?#{cacheBreaker}')
+
+block body
+  div.row
+    div.col-sm-6
+      div.page-header
+        h1 My Account
+      div.row
+        div.col-sm-4
+          div.well.stat
+            h1 Domains
+        div.col-sm-4
+          div.well.stat
+            h1 Hosting
+        div.col-sm-4
+          div.well.stat
+            h1 E-mail
+      div.row
+        div.col-sm-4
+          div.well.stat
+            h1 Social
+        div.col-sm-4
+          div.well.stat
+            h1 Apps
+        div.col-sm-4
+          div.well.stat
+            h1 Support
+    div.col-sm-6.special
+      div.page-header
+        h1 Want More?
+        p Check out all the products and features we have to offer.
+      a.btn.btn-primary.btn-lg(href='/products/') Products
